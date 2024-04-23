@@ -1,0 +1,45 @@
+.event{
+    
+    padding: 80px 0;
+    color: black;
+    
+
+    &--soccer{
+        background-image: linear-gradient(196deg, #0a1c39, #325d7f);
+    }
+
+    &--hike{
+        background-image: linear-gradient(111deg, #325d7f, #393423);
+    }
+
+    &--golf{
+        background-image: linear-gradient(86deg, #325d7f, #0a1c39);
+    }
+
+    &--snowboard{
+        background-image: linear-gradient(86deg, #0a1c39, #393423);
+    }
+
+    &--image-left{
+        .container{
+            flex-direction: row-reverse;
+        }
+    }
+
+    .container{
+        display: flex;
+        gap: 40px;
+    }
+
+    &__details{
+        h2{
+            margin-bottom: 16px;
+        }
+    }
+
+    &__image{
+        max-width: 440px;
+        width: 100%;
+        height: 350px;
+    }
+}

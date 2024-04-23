@@ -1,6 +1,7 @@
 @use 'hero';
 @use './components/info-container';
 @use './components/button';
+@use 'event';
 
 *{
     padding: 0;
