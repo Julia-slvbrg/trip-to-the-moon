@@ -1,3 +1,42 @@
-body{
-    background-color: red;
+@use 'hero';
+@use './components/info-container';
+@use './components/button';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    list-style-type: none;
+}
+
+.title{
+    font-family: "Jersey 25", sans-serif;
+    font-size: 56px;
+
+    @media(max-width: 1024px){
+        font-size: 45px;
+    }
+
+    @media(max-width: 640px){
+        font-size: 40px;
+    }
+}
+
+.text{
+    font-family: "Platypi", serif;
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media(max-width: 1024px){
+        max-width: 90%;
+    }
+
+    @media(max-width: 640px){
+        max-width: 80%;
+    }
 }

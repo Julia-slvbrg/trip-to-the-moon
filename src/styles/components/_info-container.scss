@@ -1,0 +1,42 @@
+.info-container{
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #414040;
+    border-radius: 5px;
+
+    &__list{
+        display: flex;
+        gap: 40px;
+        
+        &__item{
+           display: flex;
+           flex-direction: column;
+           font-size: 14px;
+
+            b{
+                display: block;
+                font-size: 18px;
+            }
+        }        
+    }
+
+    @media(max-width: 1024px){
+        &__list{
+            gap: 15px;
+        }
+    }
+
+    @media(max-width: 640px){
+        display: block;
+        text-align: center;
+
+        &__list{
+            display: block;
+
+            &__item{
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
