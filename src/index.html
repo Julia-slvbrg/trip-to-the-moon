@@ -8,16 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <div class="hero__text title">
-                <p class="event__details__description">
+                <p class="hero__text__description">
                     Come on the next big trip to the moon!!
                 </p>
                 
-                <p>111d 22h 23min 4s</p>
+                <p class="hero__text__timer" id="timer">111d 22h 23min 4s</p>
             </div>
            
             <div class="info-container text">
@@ -43,7 +44,11 @@
     </header>
 
     <section class="event event--soccer event--image-left">
-        <div class="container">   
+        <div class="container"
+            data-aos="fade-right"
+            data-aos-offset="400"
+            data-aos-easing="ease-in-sine"
+        >   
             <div class="event__details text">
                 <h2 class="event__details__title">Space Soccer</h2>
                 <p class="event__details__description">
@@ -55,7 +60,11 @@
     </section>
 
     <section class="event event--hike">
-        <div class="container">   
+        <div class="container"
+            data-aos="fade-left"
+            data-aos-offset="400"
+            data-aos-easing="ease-in-sine"
+        >   
             <div class="event__details text">
                 <h2 class="event__details__title">Group Hike</h2>
                 <p class="event__details__description">
@@ -67,7 +76,11 @@
     </section>
 
     <section class="event event--golf event--image-left">
-        <div class="container">   
+        <div class="container"
+            data-aos="fade-right"
+            data-aos-offset="400"
+            data-aos-easing="ease-in-sine"
+        >   
             <div class="event__details text">
                 <h2 class="event__details__title">Space Golf</h2>
                 <p class="event__details__description">
@@ -79,7 +92,11 @@
     </section> 
 
     <section class="event event--snowboard">
-        <div class="container">   
+        <div class="container"  
+            data-aos="fade-left"
+            data-aos-offset="400"
+            data-aos-easing="ease-in-sine"
+        >   
             <div class="event__details text">
                 <h2 class="event__details__title">Group Snowboard</h2>
                 <p class="event__details__description">
@@ -90,6 +107,7 @@
         </div>        
     </section>
 
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>

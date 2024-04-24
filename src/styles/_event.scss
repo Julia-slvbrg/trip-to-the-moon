@@ -1,20 +1,22 @@
+@use 'variables';
+
 .event{
     padding: 80px 0;    
 
     &--soccer{
-        background-image: linear-gradient(196deg, #0a1c39, #325d7f);
+        background-image: linear-gradient(196deg, variables.$blue2, variables.$blue1);
     }
 
     &--hike{
-        background-image: linear-gradient(125deg, #0a1c39, #393423);
+        background-image: linear-gradient(125deg, variables.$blue2, variables.$brown);
     }
 
     &--golf{
-        background-image: linear-gradient(86deg, #325d7f, #0a1c39);
+        background-image: linear-gradient(86deg, variables.$blue1, variables.$blue2);
     }
 
     &--snowboard{
-        background-image: linear-gradient(237deg, #0a1c39, #393423);
+        background-image: linear-gradient(237deg, variables.$blue2, variables.$brown);
     }
 
     &--image-left{
