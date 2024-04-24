@@ -1,8 +1,10 @@
+@use './../variables';
+
 .info-container{
     padding: 16px 24px;
     display: flex;
     justify-content: space-between;
-    background-color: #414040;
+    background-color: variables.$infoBgColor;
     border-radius: 5px;
 
     &__list{

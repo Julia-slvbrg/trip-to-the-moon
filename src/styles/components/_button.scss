@@ -1,3 +1,5 @@
+@use './../variables';
+
 .button{
     max-width: 110px;
     width: 100%;
@@ -15,7 +17,7 @@
     }
 
     &:active{
-        background-color: #ccc;
+        background-color: variables.$btnColor;
         transform: scale(1.1);
         transition: all ease .5s;
     }
